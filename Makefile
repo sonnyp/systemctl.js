@@ -15,12 +15,12 @@ unit-setup:
 	sudo cp re.sonny.systemctl.js /tmp/re.sonny.systemctl
 	sudo cp re.sonny.systemctl.ini /etc/systemd/system/re.sonny.systemctl.service
 	sudo systemctl daemon-reload
-	sudo setenforce 0
+	- sudo setenforce 0
 
 unit-teardown:
 	sudo rm -f /etc/polkit-1/rules.d/re.sonny.systemctl.rules
 	sudo rm -f /tmp/re.sonny.systemctl
 	sudo rm -f /etc/systemd/system/re.sonny.systemctl.system
-	sudo setenforce 1
+	- sudo setenforce 1
 
 test: setup lint unit-setup unit unit-teardown
