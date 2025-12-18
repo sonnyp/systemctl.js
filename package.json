@@ -1,0 +1,12 @@
+{
+  "name": "systemctl.js",
+  "version": "0.1.0",
+  "description": "systemctl API for JavaScript",
+  "license": "ISC",
+  "author": "Sonny Piers <sonny@fastmail.net>",
+  "type": "module",
+  "main": "systemctl.js",
+  "dependencies": {
+    "dbus.js": "^0.1.0"
+  }
+}
