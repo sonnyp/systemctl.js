@@ -51,7 +51,7 @@ afterEach(async () => {
   // https://serverfault.com/questions/845471/service-start-request-repeated-too-quickly-refusing-to-start-limit
   // Fedora: "Failed at step EXEC spawning /.../re.sonny.systemctl.js: Permission denied"
   // looks like there is a rate limit with selinux (setenforce 0 works too)
-  await setTimeout(2000);
+  // await setTimeout(2000);
 });
 
 describe("stop", async () => {
