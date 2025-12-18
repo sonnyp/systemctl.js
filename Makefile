@@ -21,4 +21,4 @@ unit-teardown:
 	sudo rm -f /tmp/re.sonny.systemctl
 	sudo rm -f /etc/systemd/system/re.sonny.systemctl.system
 
-test: lint unit-setup unit unit-teardown
+test: setup lint unit-setup unit unit-teardown
