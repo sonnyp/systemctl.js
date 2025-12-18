@@ -8,5 +8,8 @@
   "main": "systemctl.js",
   "dependencies": {
     "dbus.js": "^0.1.0"
+  },
+  "engines": {
+    "node": ">=22"
   }
 }
